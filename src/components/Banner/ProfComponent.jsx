@@ -14,7 +14,7 @@ const ProfComponent = () => {
             Hello <span className="green">I'am</span>
           </h3>
           <h1 className="green">Pathak Raghavendra</h1>
-          <h3>Full Stack Developer, Python Developer</h3>
+          <h3>Flutter Developer & Full Stack Developer</h3>
           <p>
             I am a fresher aiming to be a full stack developer and contributing to 
 	   various open-sourced projects and working on quite a few personal projects.
