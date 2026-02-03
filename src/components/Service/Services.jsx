@@ -1,7 +1,7 @@
 import React from "react";
-import {SiFlutter } from "react-icons/si";
-import { FiCodesandbox } from "react-icons/fi";
-import { FaPython } from "react-icons/fa";
+// import {SiFlutter } from "react-icons/si";
+// import { FiCodesandbox } from "react-icons/fi";
+import { FaCloud, FaJava, FaPython } from "react-icons/fa";
 import styled from "styled-components";
 import Card from "./Card";
 import { Slide } from "react-awesome-reveal";
@@ -19,22 +19,22 @@ const Services = () => {
         <Slide direction="left">
           <Card
             Icon={FaPython}
-            title={"Python"}
-            disc={`I learned python programming language and many of it's frameworks like flask,django,pandas,matplotlib etc. `}
+            title={"Python & AI"}
+            disc={`Creating Python applications, AI agents using the Flask, Pandas, Pytorch, Tensorflow, Ollama, OpenAI, Gemini apis etc. `}
           />
         </Slide>
         <Slide direction="up">
           <Card
-            Icon={FiCodesandbox}
-            title={"Full Stack Developer"}
-            disc={`I am currently learning and building projects using Nodejs-Expressjs-Reactjs-Mongodb which is MERN Stack`}
+            Icon={FaJava}
+            title={"Java Full Stack Developer"}
+            disc={`I am currently working and building CyberSecurity Applications using Java Spring Boot, Reactjs, Mongodb, OpenStack Cloud, Docker, Terraform.`}
           />
         </Slide>
         <Slide direction="right">
           <Card
-            Icon={SiFlutter}
-            title={"Flutter Beginner"}
-            disc={`I am entuastic guy prefer to work and also versatile. So I started learning flutter from scratch and trying to build projects.`}
+            Icon={FaCloud}
+            title={"Cloud & Devops"}
+            disc={`Creating Containers using Docker, creating Pods using the Kubernetes and deploying k8, scaling to the AWS, OpenStack cloud.`}
           />
         </Slide>
       </Cards>

@@ -6,6 +6,7 @@ import Footer from "./components/Footer/Footer";
 import Projects from "./components/Projects/Projects";
 import Services from "./components/Service/Services";
 import ScrollButton from './components/ScrollButton';
+import ExperienceSection from "./components/Experience/ExperienceSection";
 function App() {
 
   return (
@@ -15,6 +16,7 @@ function App() {
         <ProfComponent />
       </Banner>
       <Services />
+      <ExperienceSection />
       <LightColor>
         <Projects />
       </LightColor>
@@ -22,7 +24,7 @@ function App() {
       <LightColor>
         <Footer />
       </LightColor>
-<ScrollButton/>
+      <ScrollButton />
     </Container>
   );
 }

@@ -13,9 +13,10 @@ const Header = () => {
         <Nav bar={bar}>
             <span><a href="#home">Home</a></span>
             <span><a href="#service">Work</a></span>
+            <span><a href="#experience">Experience</a></span>
             <span><a href="#project">Projects</a></span>
             <span><a href="#client">Education</a></span>
-	    <span><a href='https://drive.google.com/file/d/1GAGNq78HcOLh9F8SkYenO7c2pR31Qtul/view?usp=drive_link'>Resume</a></span>
+	    <span><a href='https://drive.google.com/file/d/1lMXAdjlEX8ctIYgpyg0jHLGArgQed5Nz/view?usp=drivesdk'>Resume</a></span>
             <span><a href="#footer">Connect</a></span>
         </Nav>
         <div

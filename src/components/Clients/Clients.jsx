@@ -16,7 +16,7 @@ let clients = [
     {
         name : "Narayana Junior College",
         position : "State board of Intermediate,Hyderabad",
-        img_url : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0PcMWZtTLrb_JPKtrrzxBcQOrdr1Ymqlg0g&usqp=CAU",
+        img_url : "https://content.jdmagicbox.com/v2/comp/hyderabad/h7/040pxx40.xx40.161118011529.v1h7/catalogue/narayana-junior-college-ecil-hyderabad-junior-colleges-1kjuim2bmp.jpg",
         stars : 4,
         disc : `I have successfully completed my Inter by scoring 95.9% from this junior college. I have learnt Maths, Chemistry and Physics subjects etc.`
     },
@@ -29,7 +29,7 @@ let clients = [
     },
     {
         name : "Self Study through Social platforms",
-        position : "Reactjs,Flutter,Python and also many other things",
+        position : "Reactjs,Java,Python and also many other things",
         img_url : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROHv_WahJRSQ_SSyRYned9VwGZoZyx5kgJQQ&usqp=CAU",
         stars : 5,
         disc : `I am self motivated guy and also being versatile to learn new things and can handle any situation to comethrough it and be straightforward.`
