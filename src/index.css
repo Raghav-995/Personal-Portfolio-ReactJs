@@ -1,88 +1,111 @@
-@import url('https://fonts.googleapis.com/css2?&family=Secular+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
-  scroll-behavior: smooth;
+@layer base {
+  html {
+    color-scheme: dark;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #090d16;
+    color: #f1f5f9;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+
+  code, pre, kbd {
+    font-family: 'JetBrains Mono', monospace;
+  }
 }
 
-:root{
-  --lighter: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
-  ---background: #191923;
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
 }
 
-body{
-  width: 100%;
-  background-color: var(---background);
-  color: #fff;
-  overflow-x: hidden;
+::-webkit-scrollbar-track {
+  background: #090d16;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #38bdf8;
+}
+
+/* Glassmorphism & Card Styles */
+.glass-panel {
+  background: rgba(14, 21, 38, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.glass-panel-hover {
+  background: rgba(14, 21, 38, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel-hover:hover {
+  background: rgba(18, 27, 48, 0.85);
+  border-color: rgba(56, 189, 248, 0.3);
+  box-shadow: 0 10px 30px -10px rgba(56, 189, 248, 0.15);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #ffffff 20%, #94a3b8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-cyan {
+  background: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-accent {
+  background: linear-gradient(135deg, #38bdf8 0%, #a855f7 50%, #34d399 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glow-border {
   position: relative;
 }
 
-.green {
-  color: #01be96;
-}
-
-.slick-list, .slick-slider, .slick-track{
-  padding: 1.5rem 0;
-}
-
-.center .slick-center .project{
-  transform: scale(1.3);
-  z-index: 10000;
-  transition: all 400ms ease-in-out;
-  pointer-events: all;
-  opacity: 1;
-}
-
-.center .project{
-  opacity: 0.7;
+.glow-border::after {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(to bottom right, rgba(56, 189, 248, 0.3), rgba(129, 140, 248, 0.1), transparent);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
   pointer-events: none;
 }
 
-@media(max-width: 990px){
-  .center .slick-center .project{
-    transform: scale(1);
-  }
-
-  .center .project{
-    opacity: 1;
-    pointer-events: all;
-  }
+/* Subtle grid overlay */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
 }
 
-
-/* scroll bar style  */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 50px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
-@keyframes header {
-  0%{
-    transform: translateY(-30px);
-    opacity: 0;
-  } 
-  100%{
-    transform: translateY(0);
-      opacity: 1;
-  }
-}
+/* Code block highlight */
+.code-token-keyword { color: #f43f5e; }
+.code-token-string { color: #34d399; }
+.code-token-property { color: #38bdf8; }
+.code-token-number { color: #fbbf24; }
+.code-token-comment { color: #64748b; font-style: italic; }
