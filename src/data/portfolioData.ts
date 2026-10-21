@@ -74,7 +74,7 @@ export const PORTFOLIO_DATA = {
     statusBadge: "Available for Senior / Staff Technical Roles",
     github: "https://github.com/raghav-995",
     linkedin: "https://www.linkedin.com/in/raghavendra995",
-    email: "raghavendra.pathak995@gmail.com",
+    email: "raghavendrapathak0@gmail.com",
     resumeUrl: "#contact",
   },
 
@@ -339,7 +339,7 @@ export const PORTFOLIO_DATA = {
   contact: {
     title: "Let's Build Something High-Impact Together",
     subtitle: "I am actively seeking Senior / Staff Full Stack, Cloud/Backend, or GenAI Software Engineering roles. Whether you have an open position or want to discuss distributed system design, let's connect.",
-    email: "raghavendra.pathak995@gmail.com",
+    email: "raghavendrapathak0@gmail.com",
     location: "Hyderabad, India (Open to Remote / Hybrid / Relocation)",
     socials: [
       { name: "GitHub", url: "https://github.com/raghav-995", username: "@raghav-995" },
