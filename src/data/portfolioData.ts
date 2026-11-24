@@ -367,16 +367,16 @@ export const PORTFOLIO_DATA = {
     {
       company: "NextAstra Technologies",
       shortCompany: "NextAstra",
-      role: "Full Stack Developer",
+      role: "Flutter Developer",
       type: "Full-Time",
       duration: "Jul 2024 – Jan 2025",
       location: "Hyderabad, India",
       bullets: [
-        "Developed a production-grade healthcare web application using React, TypeScript, Spring Boot, and MySQL.",
+        "Developed Flutter mobile screens and reusable widgets for a production application, delivering responsive interfaces with consistent loading and error states.",
         "Designed high-performance REST APIs for appointment scheduling, patient workflows, and user management with granular RBAC.",
-        "Collaborated using agile Git workflows, contributing to critical core features, bug fixes, and peer code reviews."
+        "Deployed the Spring Boot APIs on AWS, keeping them reliably available to the mobile application."
       ],
-      techStack: ["React.js", "TypeScript", "Spring Boot", "REST APIs", "MySQL", "Tailwind CSS", "Git"]
+      techStack: ["Flutter", "Spring Boot", "REST APIs", "MySQL", "Tailwind CSS", "Git"]
     },
     {
       company: "IGrand IT Solutions",
@@ -386,11 +386,11 @@ export const PORTFOLIO_DATA = {
       duration: "Dec 2023 – Jun 2024",
       location: "Hyderabad, India",
       bullets: [
-        "Collaborated on full-stack feature development and API integrations across multiple client projects alongside senior engineers.",
-        "Improved backend database throughput by ~15% using efficient MySQL schema indexing and query optimization.",
-        "Gained hands-on production experience in RESTful architecture design, live system debugging, and incident resolution."
+        "Developed Flutter screens and reusable UI components for a cross-platform mobile application, translating design specifications into responsive interfaces.",
+        "Created lightweight REST APIs with Node.js to supply data to the mobile screens.",
+        "Strengthened code quality and delivery pace through peer code reviews and sprintbased collaboration with senior engineers."
       ],
-      techStack: ["Java", "Spring Boot", "MySQL", "JavaScript", "REST APIs", "SQL Optimization"]
+      techStack: ["Flutter", "Node.js", "MySQL", "JavaScript", "REST APIs", "SQL Optimization"]
     }
   ],
 
